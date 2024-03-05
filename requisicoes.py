@@ -96,3 +96,24 @@ def atualizar_evento(id, data):
     headers = {'Content-Type': 'application/json'}
     response = requests.put(url, json=data, headers=headers)
     return response.json()
+
+# Funçoes para usuario
+
+def cadastrar_usuario(data):
+    response = requests.post('http://127.0.0.1:8000/usuario/', json=data)
+    return response.json(), response.status_code
+
+def deletar_usuario(user_id):
+    data = {'user': user_id}
+    response = requests.delete('http://127.0.0.1:8000/usuario/', json=data)
+    return response.json(), response.status_code
+
+def atualizar_usuario(user_id, update_data):
+    data = {'user': user_id}
+    data.update(update_data)
+    response = requests.put('http://127.0.0.1:8000/usuario/', json=data)
+    return response.json(), response.status_code
+
+def listar_usuarios():
+    response = requests.get('http://127.0.0.1:8000/usuario/')
+    return response.json(), response.status_code
