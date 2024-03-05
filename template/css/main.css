@@ -7,18 +7,25 @@
   
   body, html {
     height: 100%;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lekton', sans-serif;
   }
-  
+
   nav {
+    height: 80px;
+    background-color: #b02a37;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.5);
+    /* fundo vermelho */
+    background: linear-gradient(180deg, rgba(99, 4, 4, 0.7) 0%, rgba(121, 34, 34, 0.7) 100%);
+    box-shadow: 0px 4px 34.6px 21px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+/* Note: backdrop-filter has minimal browser support */
   }
   
   .menu {
+    background: rgba(0, 0, 0, 0); /* Fundo totalmente transparente */
     list-style-type: none;
     display: flex;
     gap: 1rem;
@@ -26,8 +33,7 @@
   
   .menu li a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    color: #ffffff;
   }
   
   .special-link {
@@ -37,7 +43,7 @@
   
   .auth-links a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     margin-left: 1rem;
   }
   
@@ -46,16 +52,16 @@
   }
   
   .hero {
-    height: calc(100vh - 50px); /* Adjusted for the height of the nav */
+    height: calc(100vh);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url('../css/plano_de_fundo_coracao.webp') center/cover no-repeat;
+    background: url('../imagens/Main_page/Plano_de_fundo.jpeg') center/cover no-repeat;
   }
   
   .hero-content {
-    max-width: 90%;
+    max-width: 50%;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.8);
     padding: 2rem;
@@ -81,4 +87,8 @@
   .cta-button:hover {
     background-color: #d0344a;
   }
+
+  
+
+  
   
