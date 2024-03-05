@@ -206,20 +206,36 @@ a {
 }
 
 .progress-bar-container {
-  position: absolute;
-  bottom: 0; /* Alinha a barra de progresso à parte inferior do contêiner da imagem */
-  left: 0; /* Alinha a barra de progresso à esquerda do contêiner da imagem */
-  width: 90%; /* Faz com que a barra de progresso tenha a mesma largura que a imagem */
+  width: 95%; /* Largura do contêiner da barra de progresso */
   background-color: #ddd; /* Cor de fundo da barra de progresso */
-  border-radius: 0 0 5px 5px; /* Ajuste o raio da borda para coincidir com o da imagem */
+  border-radius: 0px; /* Bordas arredondadas */
+  position: relative; /* Para posicionamento absoluto dos elementos filhos */
 }
 
 .progress-bar {
   height: 20px; /* Altura da barra de progresso */
   background-color: #b02a37; /* Cor da barra de progresso */
-  border-radius: 5px; /* Raio da borda da barra de progresso */
-  transition: width 0.5s ease-in-out;
+  border-radius: 5px; /* Mantenha as bordas arredondadas na barra também */
+  position: relative; /* Garantir que o texto não sobreponha */
 }
+
+.percentage-circle {
+  width: 100px; /* Tamanho do círculo */
+  height: 100px; /* Tamanho do círculo */
+  background-color: #b02a37; /* Cor de fundo do círculo */
+  border-radius: 50%; /* Faz com que o div se torne um círculo */
+  color: white; /* Cor do texto dentro do círculo */
+  display: flex; /* Permite centralizar o conteúdo com facilidade */
+  align-items: center; /* Centraliza o conteúdo no eixo y */
+  justify-content: center; /* Centraliza o conteúdo no eixo x */
+  position: absolute; /* Posiciona em relação ao contêiner da barra */
+  right: -17.5px; /* Metade do tamanho do círculo para alinhar ao centro da borda */
+  top: 50%; /* Posiciona na metade da altura da barra de progresso */
+  transform: translateY(-50%); /* Desloca para cima pela metade do tamanho do círculo para alinhamento vertical */
+  font-size: 40px; /* Tamanho da fonte do texto dentro do círculo */
+  z-index: 1; /* Garante que o círculo fique acima da barra de progresso */
+}
+
 
 
 
