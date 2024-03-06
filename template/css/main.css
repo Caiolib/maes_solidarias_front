@@ -27,6 +27,7 @@ a {
     background: linear-gradient(180deg, rgba(99, 4, 4, 0.7) 0%, rgba(121, 34, 34, 0.7) 100%);
     box-shadow: 0px 4px 34.6px 21px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(5px);
+    z-index: 1000;
 /* Note: backdrop-filter has minimal browser support */
   }
   .menu {
@@ -115,18 +116,14 @@ a {
 
 
 .active-causes {
-  margin-top: 2vw;
+  margin-top: 1vw;
   margin-left: 15vw;
   margin-right: 15vw;
-  background-color: #fff; /* Ou a cor de fundo desejada */
+  background-color: #ffffff; /* Ou a cor de fundo desejada */
   position: relative; /* Isso é necessário para que o retângulo de fundo seja posicionado corretamente */
 }
 
-.background-rectangle {
-  position: absolute;
-  background: #646441;
- /* Certifique-se de que o retângulo fique atrás do conteúdo da seção */
-}
+
 
 .active-causes .section-title {
   color: #893326; /* Ou a cor de texto desejada */
@@ -220,8 +217,8 @@ a {
 }
 
 .percentage-circle {
-  width: 100px; /* Tamanho do círculo */
-  height: 100px; /* Tamanho do círculo */
+  width: 90px; /* Tamanho do círculo */
+  height: 90px; /* Tamanho do círculo */
   background-color: #b02a37; /* Cor de fundo do círculo */
   border-radius: 50%; /* Faz com que o div se torne um círculo */
   color: white; /* Cor do texto dentro do círculo */
@@ -237,7 +234,104 @@ a {
 }
 
 
-
+/* Estilos para a seção de depoimentos */
+.container{
+  display: flex;
+  margin-top: 10vw;
+  margin-bottom: 5vw;
+  margin-left: 10vw;
+}
 
   
-  
+.about-us-image-2 img{
+  width: 65%; /* Ajuste conforme necessário para o seu layout */
+  height: auto; /* Isso manterá a proporção da imagem correta */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 2vw;
+  margin-left: 4vw;
+}
+
+.about-us-text{
+  width: 35%; /* Ajuste conforme necessário para o seu layout */
+  padding:  2vw; /* Ajuste conforme necessário para o seu layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 5vw;
+}
+
+.about-us-text h2{
+  align-self: first baseline;
+  color: #893326; /* Ou a cor de texto desejada */
+  font-size: 5rem;
+  margin-bottom: 1em;
+
+}
+
+.about-us-text p{
+  color: #000000; /* Ou a cor de texto desejada */
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+.about-us-text a{
+  color: #ffffff; /* Ou a cor de texto desejada */
+  font-size: 2rem;
+  margin-bottom: 1em;
+  text-decoration: none;
+}
+
+.polygon {
+  position: absolute;
+  width: 272.87px;
+  height: 273.97px;
+  background: #893326;
+  opacity: 0.8;
+  transform: skewX(20deg) skewY(10deg) rotate(30deg);
+  /* Você precisará ajustar o clip-path para criar a forma desejada do polígono */
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  z-index: -1;
+}
+
+
+.about-us-stats {
+  background-color: #fdbbbb; /* Cor de fundo rosa pálido da área de estatísticas */
+  display: flex; /* Usa Flexbox para alinhar os itens */
+  justify-content: space-around; /* Espaça os itens uniformemente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  padding: 4rem; /* Espaçamento superior e inferior */
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+
+.stat-item {
+  text-align: center; /* Centraliza o texto dentro de cada item de estatística */
+}
+
+.stat-number {
+  display: block; /* Faz o número aparecer em uma nova linha */
+  font-size: 4em; /* Aumenta o tamanho do número */
+  color: #ffffff; /* Cor do número */
+  font-style: bold;
+}
+
+.stat-description {
+  font-size: 2.5em; /* Tamanho da descrição */
+  color: #ffffff; /* Cor da descrição */
+}
+
+/* Exemplo de estilo para os ícones, caso você esteja usando fontes de ícone como FontAwesome */
+.stat-item i {
+  font-size: 2em; /* Tamanho do ícone */
+  margin-bottom: 10px; /* Espaço entre o ícone e o número */
+}
+
+/* Exemplo de estilo para ícones SVG ou imagens, caso você os utilize */
+.stat-item img {
+  width: 50px; /* Largura do ícone */
+  height: auto; /* Altura automática para manter a proporção */
+  margin-bottom: 10px; /* Espaço entre o ícone e o número */
+}
+
+

@@ -32,7 +32,7 @@ def listar_produtos():
     response = requests.get(url)
     return response.json()
 
-def atualizar_produto(nome, novo_nome=None, descricao=None, preco=None, estoque=None, total_vendido=None, categoria=None):
+def atualizar_produto(nome, novo_nome=None, descricao=None, preco=None, estoque=None, total_vendido=None, categoria=None, imagens=None):
     url = 'http://127.0.0.1:8000/bazar/'
     headers = {'Content-Type': 'application/json'}
     data = {
@@ -42,7 +42,8 @@ def atualizar_produto(nome, novo_nome=None, descricao=None, preco=None, estoque=
         'preco': preco,
         'estoque': estoque,
         'total_vendido': total_vendido,
-        'categoria': categoria
+        'categoria': categoria,
+        'imagens': imagens
     }
     response = requests.put(url, json=data, headers=headers)
     return response.json()
@@ -129,7 +130,8 @@ evento_exemplo = {
     'description': 'O melhor do rock nacional e internacional.',
     'date': '2022-12-31',
     'people': 10,
-    'sponsors': ['Marca Z']
+    'sponsors': ['Marca Z'],
+    'images': ['url1', 'url2']
 }
 usuario_exemplo = {
     'first_name': 'ogq',
@@ -151,3 +153,4 @@ print(resposta_usuario, status_usuario)
 print("\nListando usuários:")
 usuarios, status_usuarios = listar_usuarios()
 print(usuarios, status_usuarios)
+
