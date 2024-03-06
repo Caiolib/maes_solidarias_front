@@ -98,6 +98,7 @@ a {
             background-position: top center;
             background-size: 100%, 100%;
             margin-top: (-10vh);
+
           }
         
         .campanha-coelho{
@@ -115,9 +116,9 @@ a {
             width: 100%; 
             margin-top: -30vh;
             margin-left : 0vw;
-            margin-right : -20vw;
+            margin-right : 20vw;
             margin-bottom: 30vh;
-
+            
         }
     
         .escorregador{
@@ -158,6 +159,22 @@ a {
         }
     
         .Foto_coelho{
-            width: 80%; /* Faz a imagem preencher a largura do container */
+            width: 90%; /* Faz a imagem preencher a largura do container */
             height: auto;
         }
+
+        .cta-button2 {
+            transform: translateY(30vh);
+            font-family: "Just Me Again Down Here", cursive;
+            font-size: 2.5rem;
+            background: #822323;
+            color: rgb(255, 255, 255);
+            padding: 1.7rem 3.1rem;
+            transition: background-color 0.3s ease;
+    
+        
+          }
+          
+          .cta-button2:hover {
+            background-color: #94202f;
+          }
