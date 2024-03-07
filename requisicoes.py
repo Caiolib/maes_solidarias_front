@@ -111,6 +111,11 @@ def listar_usuarios():
     response = requests.get('http://127.0.0.1:8000/usuario/')
     return response.json(), response.status_code
 
+def login_user(request):
+    data = {'email': request['email'], 'password': request['password']}
+    response = requests.post('http://127.0.0.1:8000/access/login/', json=data)
+    return response.json()
+
 #Teste
 # Script de teste para a API Django
 
