@@ -15,56 +15,55 @@ a {
 
   nav {
     width: 100%;
-    height: 110px;
+    height: 8vh;
     background-color: #b02a37;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    
     position: fixed;
     /* fundo vermelho */
     background: linear-gradient(180deg, rgba(99, 4, 4, 0.7) 0%, rgba(121, 34, 34, 0.7) 100%);
     box-shadow: 0px 4px 34.6px 21px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(5px);
     z-index: 1000;
-/* Note: backdrop-filter has minimal browser support */
   }
+
   .menu {
-  list-style: none;
-  display: flex; /* Estabelece um contêiner flexível */
-  justify-content: center; 
-  align-items: center; 
-  width: 100%; /* Ocupa a largura total da 'nav' */
-  font-size: 2rem;
-  gap : 3rem;
-  }
+    list-style: none;
+    display: flex; /* Estabelece um contêiner flexível */
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; /* Ocupa a largura total da 'nav' */
+    font-size: 2.9vh;
+    gap : 1.7vw;
+    }
 
-  
-  .menu li a {
-    text-decoration: none;
-    color: #ffffff;
-  }
-  
-  .special-link {
-    border: 1px solid #ffffff;
-    padding: 0.2rem 0.3rem;
-  }
-  
-.auth-links {
-  position: absolute; 
-  right: 1rem; 
-  top: 1rem; 
-  display: flex; 
-  align-items: center; 
-}
-
-
-.auth-links a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 0.95rem; 
-  margin-left: 1rem; 
-}
+    .menu li a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+      
+      .special-link {
+        border: 1px solid #ffffff;
+        padding: 0.2vh 0.3vw;
+      }
+      
+    .auth-links {
+      position: absolute; 
+      right: 1vw; 
+      top: 1vh; 
+      display: flex; 
+      align-items: center; 
+    }
+    
+    
+    .auth-links a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 1.7vh; 
+      margin-left: 1vh; 
+    }
 
   
 .hero {
@@ -72,11 +71,41 @@ a {
   display: flex;
   flex-direction: column; /* Isso garante que os itens sejam empilhados verticalmente */
   justify-content: center; /* Isso centraliza os itens verticalmente */
-  align-items: flex-start; /* Isso alinha os itens para o início do eixo horizontal */
+ /* Isso alinha os itens para o início do eixo horizontal */
   text-align: left; /* Isso garante que o texto dentro do .hero seja alinhado à esquerda */
   background: url('../imagens/Main_page/Plano_de_fundo.jpeg') center/cover no-repeat;
-  padding-left: 21vw;
+
 }
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between; /* Isso espaça os filhos flexíveis uniformemente */
+  align-items: center; /* Isso centraliza os itens verticalmente */
+  width: 100%;
+}
+
+.hero-content {
+  /* Ajuste a largura conforme necessário */
+  flex-basis: 60%; /* ou 60% do espaço disponível */
+  padding-top: 6vh;
+  padding-left: 5vw;
+}
+
+.Anuncios {
+  /* Restante das suas propriedades... */
+  display: flex;        /* Habilita flexbox */
+  flex-direction: column;/* Organiza os filhos em coluna */
+  align-items: center;   /* Centraliza os filhos horizontalmente */
+  text-align: center;    /* Alinha o texto ao centro */
+  margin-right: 3vw;
+  
+}
+
+.Anuncios h2 {
+  /* Restante das suas propriedades... */
+  margin-bottom: 1vh; /* Ajuste o valor conforme necessário para o espaçamento entre o título e a imagem */
+}
+
 
   .hero h2{
     color: #ffffff;
@@ -333,4 +362,128 @@ a {
   margin-bottom: 10px; /* Espaço entre o ícone e o número */
 }
 
+.charity-section {
+  display: flex;
+  flex-wrap: wrap; /* This allows for wrapping when the screen is too small */
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
 
+.Titulo  {
+  width: 100%; /* Span the full width */
+  font-size: 2vh;
+  text-align: center; /* Center the text */
+  margin-top: 20vh;
+  margin-bottom: 3vh;
+  color:rgba(99, 4, 4, 0.7) /* Spacing between the title and the events */
+}
+
+.Titulo p {
+  margin-top: 3vh;
+  font-size: 5vh;
+  color:#000000
+}
+
+
+.event {
+  position: relative; /* Allows for absolute positioning of children */
+  margin: 1vh; /* Adjust this value as needed to control spacing */
+  overflow: hidden; /* Ensures nothing spills out */
+  border-radius: 8px;
+}
+
+.event img {
+  width: 100%;
+  display: block; /* Removes any space below the image */
+}
+
+.event-content {
+  position: absolute;
+  top: 0; /* Positions the content at the top of the event */
+  left: 0; /* Aligns the content to the left edge */
+  right: 0; /* Aligns the content to the right edge */
+  bottom: 0; /* Aligns the content to the bottom edge */
+  display: flex;
+  flex-direction: column;
+  justify-content: end; /* Aligns the text to the bottom */
+  align-items: center; /* Centers the text horizontally */
+  color: white;
+  padding: 1vw; /* Padding inside the overlay */
+}
+
+button {
+  background: url("../imagens/Main_page/botao.svg");
+  color: black;
+  border: none;
+  width: 12vw;
+  height: 4.5vh;
+  font-size: 2vh;
+  cursor: pointer;
+  font-weight: bold; /* Subtract the total horizontal padding from 100% */
+  margin-top: 19vh;
+}
+
+.botao_ac{
+  margin-left: 6vw;
+}
+
+.event h3 {
+  color: black;
+  text-align: left;
+  margin-right: 15vw;
+  margin-bottom: 3vh;
+}
+
+.event p{
+  color: #656262;
+  font-weight: bold;
+  font-size: 2.1vh;
+}
+
+.footer {
+  background-color: #822323;    
+  color: white;
+  text-align: center;
+  padding: 3vh 0; 
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin-top: 5vh; 
+  margin-bottom: 3vh;
+}
+
+.footer-section h4 {
+  margin-bottom: 5vh; 
+  font-size: 3vh;
+}
+
+.footer-section p {
+  margin-bottom: 2vh; 
+
+}
+
+.footer-bottom {
+  border-top: 0.2vh solid #ffffff; 
+  padding-top: 1vh; 
+  margin-top: 1vh; 
+}
+
+.footer-content {
+  /* Restante das suas propriedades... */
+  position: relative; /* Para posicionar a imagem de linha em relação a este contêiner */
+}
+
+.footer-line-image {
+  width: 100%; /* Isso fará com que a imagem ocupe a largura total do contêiner */
+  height: auto; /* Isso garante que a altura da imagem se ajuste para manter as proporções */
+  margin-top: 2vh; /* Adiciona espaço acima da imagem se necessário */
+}

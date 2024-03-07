@@ -15,12 +15,12 @@ a {
 
   nav {
     width: 100%;
-    height: 110px;
+    height: 8vh;
     background-color: #b02a37;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    
     position: fixed;
     /* fundo vermelho */
     background: linear-gradient(180deg, rgba(99, 4, 4, 0.7) 0%, rgba(121, 34, 34, 0.7) 100%);
@@ -35,8 +35,8 @@ a {
     justify-content: center; 
     align-items: center; 
     width: 100%; /* Ocupa a largura total da 'nav' */
-    font-size: 2rem;
-    gap : 3rem;
+    font-size: 2.9vh;
+    gap : 1.7vw;
     }
 
     .menu li a {
@@ -46,13 +46,13 @@ a {
       
       .special-link {
         border: 1px solid #ffffff;
-        padding: 0.2rem 0.3rem;
+        padding: 0.2vh 0.3vw;
       }
       
     .auth-links {
       position: absolute; 
-      right: 1rem; 
-      top: 1rem; 
+      right: 1vw; 
+      top: 1vh; 
       display: flex; 
       align-items: center; 
     }
@@ -61,8 +61,8 @@ a {
     .auth-links a {
       text-decoration: none;
       color: #ffffff;
-      font-size: 0.95rem; 
-      margin-left: 1rem; 
+      font-size: 1.7vh; 
+      margin-left: 1vh; 
     }
 
     .hero {
@@ -78,7 +78,7 @@ a {
 
         .hero-content {
             color: #ffffff;
-            margin-bottom: 20rem;
+            margin-bottom: 20vh;
         }
             .hero-content h1 {
                 font-size: 10vh;
@@ -92,21 +92,23 @@ a {
             }
         
         .campanha-crianca {
-            background-image: url('../imagens/Historias/Rectangle\ 32.svg'); /* Substitua pelo caminho correto da sua imagem */
-            background: linear-gradient(to bottom, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 50%), url('../imagens/Historias/Rectangle\ 32.svg');;
+            background:  url('../imagens/Historias/Rectangle\ 32.svg');
             background-repeat: no-repeat;
             background-position: top center;
             background-size: 100%, 100%;
             margin-top: (-10vh);
 
+
           }
         
         .campanha-coelho{
             margin-top: -30vh;
-            background: linear-gradient(to bottom, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 50%), url('../imagens/Historias/Rectangle\ 33.svg');;
+            background:  url('../imagens/Historias/Rectangle\ 33.svg');
             background-repeat: no-repeat;
             background-position: top center;
             background-size: 100%, 100%; 
+            margin-bottom: 10vh;
+            
         }
 
         .campanha-c-text {
@@ -118,6 +120,7 @@ a {
             margin-left : 0vw;
             margin-right : 20vw;
             margin-bottom: 30vh;
+            
             
         }
     
@@ -139,6 +142,8 @@ a {
         }
     
         .campaign-description_1{
+            margin-top: 10vh;
+            margin-right: 2vw;
             text-decoration: none;
             font-family: "Just Me Again Down Here", cursive;
             font-size: 4vh;
@@ -151,30 +156,84 @@ a {
         }
     
         .campanha-coelho-text {
-            justify-content: space-between;
-            display: flex;
-            align-items: center;
-            margin-left: 10vw;
-            margin-right: 10vw;
-        }
+          /* Restante das suas propriedades... */
+          display: flex;
+          
+          align-items: flex-start; /* Alinha os filhos ao início do contêiner (à esquerda) */
+          margin-left: 10vw;
+          margin-right: 10vw;
+      }
     
         .Foto_coelho{
-            width: 90%; /* Faz a imagem preencher a largura do container */
+            width: 110%; /* Faz a imagem preencher a largura do container */
             height: auto;
         }
 
         .cta-button2 {
-            transform: translateY(30vh);
-            font-family: "Just Me Again Down Here", cursive;
-            font-size: 2.5rem;
-            background: #822323;
-            color: rgb(255, 255, 255);
-            padding: 1.7rem 3.1rem;
-            transition: background-color 0.3s ease;
-    
-        
-          }
           
+          align-self: center; /* Isso centralizará o botão na seção */
+          font-family: "Just Me Again Down Here", cursive;
+          font-size: 2.5rem;
+          background: #822323;
+          color: white;
+          padding: 0.6vh 3vw;
+          transition: background-color 0.3s ease;
+        }
+
+        .campanha-coelho-text img{
+            width: 90%;
+            height: 90%;
+            margin-top: 10vh;
+        }
+
           .cta-button2:hover {
             background-color: #94202f;
           }
+
+          .footer {
+            background-color: #822323;    
+            color: white;
+            text-align: center;
+            padding: 3vh 0; 
+          }
+          
+          .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+            flex-wrap: wrap;
+          }
+          
+          .footer-section {
+            margin-top: 5vh; 
+            margin-bottom: 3vh;
+          }
+          
+          .footer-section h4 {
+            margin-bottom: 5vh; 
+            font-size: 3vh;
+          }
+          
+          .footer-section p {
+            margin-bottom: 2vh; 
+          
+          }
+          
+          .footer-bottom {
+            border-top: 0.2vh solid #ffffff; 
+            padding-top: 1vh; 
+            margin-top: 1vh; 
+          }
+          
+          .footer-content {
+            /* Restante das suas propriedades... */
+            position: relative; /* Para posicionar a imagem de linha em relação a este contêiner */
+          }
+          
+          .footer-line-image {
+            width: 100%; /* Isso fará com que a imagem ocupe a largura total do contêiner */
+            height: auto; /* Isso garante que a altura da imagem se ajuste para manter as proporções */
+            margin-top: 2vh; /* Adiciona espaço acima da imagem se necessário */
+          }
+
+          
