@@ -154,7 +154,84 @@ a {
 
 
     .linha{
-        margin-top: 2vh
+        margin-top: 3vh;
+        margin-bottom: 5vh;
     }
   
-  
+    .Produtos {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    
+    .produto .componente-container {
+      position: relative; /* Define o contêiner para posicionar os ícones */
+    }
+    
+    .produto .componente {
+      display: block; /* Imagens bloqueiam por padrão, mas apenas para segurança */
+      width: 100%; /* ou o tamanho desejado */
+      height: auto; /* Mantém a proporção da imagem */
+    }
+    
+    .produto .iconi-carrinho, 
+    .produto .coracao {
+      position: absolute;
+      bottom: 10px; /* Distância da borda inferior do contêiner .componente-container */
+    }
+    
+    .produto .iconi-carrinho {
+      left: 10px; /* Distância da borda esquerda do contêiner .componente-container */
+    }
+    
+    .produto .coracao {
+      right: 10px; /* Distância da borda direita do contêiner .componente-container */
+    }
+    
+
+.footer {
+  margin-top: 16vh;
+  background-color: #822323;    
+  color: white;
+  text-align: center;
+  padding: 3vh 0; 
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin-top: 5vh; 
+  margin-bottom: 3vh;
+}
+
+.footer-section h4 {
+  margin-bottom: 5vh; 
+  font-size: 3vh;
+}
+
+.footer-section p {
+  margin-bottom: 2vh; 
+
+}
+
+.footer-bottom {
+  border-top: 0.2vh solid #ffffff; 
+  padding-top: 1vh; 
+  margin-top: 1vh; 
+}
+
+.footer-content {
+  /* Restante das suas propriedades... */
+  position: relative; /* Para posicionar a imagem de linha em relação a este contêiner */
+}
+
+.footer-line-image {
+  width: 100%; /* Isso fará com que a imagem ocupe a largura total do contêiner */
+  height: auto; /* Isso garante que a altura da imagem se ajuste para manter as proporções */
+  margin-top: 2vh; /* Adiciona espaço acima da imagem se necessário */
+}
