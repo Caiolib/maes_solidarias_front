@@ -144,13 +144,13 @@ usuario_exemplo = {
 
 # Agora, executar os testes:
 
-# Testar o cadastro de um usuário
-print("\nCadastrando usuário:")
-resposta_usuario, status_usuario = cadastrar_usuario(usuario_exemplo)
-print(resposta_usuario, status_usuario)
+# # Testar o cadastro de um usuário
+# print("\nCadastrando usuário:")
+# resposta_usuario, status_usuario = cadastrar_usuario(usuario_exemplo)
+# print(resposta_usuario, status_usuario)
 
-# Testar a listagem de usuários
-print("\nListando usuários:")
-usuarios, status_usuarios = listar_usuarios()
-print(usuarios, status_usuarios)
+# # Testar a listagem de usuários
+# print("\nListando usuários:")
+# usuarios, status_usuarios = listar_usuarios()
+# print(usuarios, status_usuarios)
 
