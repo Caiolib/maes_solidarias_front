@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, make_response
 from requisicoes import *
 
 app = Flask(__name__, static_url_path='/static')
@@ -13,12 +13,18 @@ def index():
 def login():
     return render_template('/login.html')
 
-@app.route('/submit_login')
+@app.route('/submit_login', methods=['POST', 'GET'])
 def login_submit():
     if request.method == 'POST':
-        email = request.form['email']
-        password = request.form['password']
-        print(email, password)
+        response = login_user(request.form)
+        if response['Authorization']:
+            token = response['Authorization']
+            response = make_response("<meta http-equiv='refresh' content='0;url=/' />")
+            response.set_cookie('Authentication', value=f"Bearer {token}", httponly=True)
+            return response
+        else:
+            redirect('/login')
+    return redirect('/')
 
 
 @app.route('/register')
