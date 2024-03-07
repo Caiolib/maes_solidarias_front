@@ -29,7 +29,7 @@ def register():
 def eventos():
     return render_template('/eventos.html')
 
-@app.route('/Bazar')
+@app.route('/bazar')
 def bazar():
     return render_template('/bazar.html')
 

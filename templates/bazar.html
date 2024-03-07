@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Landing Page</title>
-<link rel="stylesheet" href="../css/Bazar.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bazar.css') }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
 <main>
     <section class="hero">
         <div class="hero-content">
-            <img src="../imagens/Bazar/Rectangle 50.svg" alt="Bazar" class="Quadrado_hero">
+            <img src="{{ url_for('static', filename='svg/Rectangle 50.svg') }}" alt="Bazar" class="Quadrado_hero">
             <div class="texto-dentro-quadro">
                 <p class="hero-titulo">%50 OFF</p>
                 <p class="hero-titulo2">Bazar<br>Solidario</p>
@@ -42,9 +42,9 @@
         <div class="loja-content">
             <h2 class="section-title">PRODUTOS POPULARES</h2>
             <p class="section-subtitle">Variedades de produtos selecionados novos e semi-novos</p>
-            <img src="../imagens/Bazar/Line 9.svg" alt="linha" class="linha">
+            <img src="{{ url_for('static', filename='svg/Line 9.svg') }}" alt="linha" class="linha">
         </div>
-        <li><a href="#"><img src="../imagens/Bazar/carrinho-de-compras 10.svg" alt="carrinho" /></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='svg/carrinho-de-compras 10.svg') }}" alt="carrinho" /></li>
             <section class="Produtos">
                 
             </section>

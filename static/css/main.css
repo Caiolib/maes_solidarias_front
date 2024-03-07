@@ -73,7 +73,7 @@ a {
   justify-content: center; /* Isso centraliza os itens verticalmente */
  /* Isso alinha os itens para o início do eixo horizontal */
   text-align: left; /* Isso garante que o texto dentro do .hero seja alinhado à esquerda */
-  background: url('../imagens/Main_page/Plano_de_fundo.jpeg') center/cover no-repeat;
+  background: url('../images/Plano_de_fundo.jpeg') center/cover no-repeat;
 
 }
 
@@ -414,7 +414,7 @@ a {
 }
 
 button {
-  background: url("../imagens/Main_page/botao.svg");
+  background: url("../svg/botao.svg");
   color: black;
   border: none;
   width: 12vw;

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Histórias</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='historias.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/historias.css') }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -41,7 +41,7 @@
 <main2>
     
     <section class='campanha-crianca'>
-        <img src="../imagens/Historias/Escorregador.svg" alt="escorregador" class="escorregador">
+        <img src="{{ url_for('static', filename='svg/Escorregador.svg') }}" alt="escorregador" class="escorregador">
         <section class="campanha-c-text">
             <div class="text-content">
                 <h2 class="section-title2"></h2>
@@ -61,7 +61,7 @@
               Inauguração do Painel da Paula Moura no Instituto André Franco Vive!
               <a href="#" class="cta-button2">CONTRIBUA</a>
           </p>
-          <img src="../imagens/Historias/Component 4.svg" alt="Foto do coelho" class="Foto_coelho">
+          <img src="{{ url_for('static', filename='svg/Component 4.svg') }}" alt="Foto do coelho" class="Foto_coelho">
       </section>
   </section>
   
@@ -84,7 +84,7 @@
           <p>55+119239503</p>
           <p>maessolidarios@gmail.com</p>
         </div>
-        <img src="../imagens/Main_page/Line 8.svg" alt="linha decorativa" class="footer-line-image">
+        <img src="{{ url_for('static', filename='svg/Line 8.svg') }}" alt="linha decorativa" class="footer-line-image">
       </div>
     </footer>
 </body>

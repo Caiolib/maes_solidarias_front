@@ -72,7 +72,7 @@ a {
         justify-content: center; /* Isso centraliza os itens verticalmente */
         align-items: flex-start; /* Isso alinha os itens para o início do eixo horizontal */
         text-align: left; /* Isso garante que o texto dentro do .hero seja alinhado à esquerda */
-        background: url('../imagens/Historias/FundoHistorias.svg') center/cover no-repeat;
+        background: url('../svg/FundoHistorias.svg') center/cover no-repeat;
         padding-left: 21vw;
       }
 
@@ -92,7 +92,7 @@ a {
             }
         
         .campanha-crianca {
-            background:  url('../imagens/Historias/Rectangle\ 32.svg');
+            background:  url('../svg/Rectangle 32.svg');
             background-repeat: no-repeat;
             background-position: top center;
             background-size: 100%, 100%;
@@ -103,7 +103,7 @@ a {
         
         .campanha-coelho{
             margin-top: -30vh;
-            background:  url('../imagens/Historias/Rectangle\ 33.svg');
+            background:  url('../svg/Rectangle 33.svg');
             background-repeat: no-repeat;
             background-position: top center;
             background-size: 100%, 100%; 
