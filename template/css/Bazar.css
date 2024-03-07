@@ -1,0 +1,153 @@
+a {
+    text-decoration: none; /* Isso irá aplicar-se a todos os links no documento */
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body, html {
+      height: 100%;
+      font-family: 'Lekton', sans-serif;
+    }
+  
+    nav {
+      width: 100%;
+      height: 8vh;
+      background-color: #b02a37;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      position: fixed;
+      /* fundo vermelho */
+      background: linear-gradient(180deg, rgba(83, 39, 39, 0.7) 0%, rgba(92, 59, 59, 0.7) 100%);
+      box-shadow: 0px 4px 34.6px 21px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(5px);
+      z-index: 1000;
+    }
+  
+    .menu {
+      list-style: none;
+      display: flex; /* Estabelece um contêiner flexível */
+      justify-content: center; 
+      align-items: center; 
+      width: 100%; /* Ocupa a largura total da 'nav' */
+      font-size: 2.9vh;
+      gap : 1.7vw;
+      }
+  
+      .menu li a {
+          text-decoration: none;
+          color: #ffffff;
+        }
+        
+        .special-link {
+          border: 1px solid #ffffff;
+          padding: 0.2vh 0.3vw;
+        }
+        
+      .auth-links {
+        position: absolute; 
+        right: 1vw; 
+        top: 1vh; 
+        display: flex; 
+        align-items: center; 
+      }
+      
+      
+      .auth-links a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.7vh; 
+        margin-left: 1vh; 
+      }
+  
+    
+  .hero {
+    height: calc(100vh);
+    display: flex;
+    flex-direction: column; /* Isso garante que os itens sejam empilhados verticalmente */
+    justify-content: center; /* Isso centraliza os itens verticalmente */
+   /* Isso alinha os itens para o início do eixo horizontal */
+    text-align: left; /* Isso garante que o texto dentro do .hero seja alinhado à esquerda */
+    background: url('../imagens/Bazar/PlanoDeFundoBazar.svg') center/cover no-repeat;
+    position: relative;
+  }
+
+  .hero img{
+    width: 38%;
+    padding-top: 70vh;
+    height: -10%;
+  }
+
+    .hero-content {
+        width: 100%;
+        padding-left: 21vw;
+        position: relative;
+        
+    }
+
+    .texto-dentro-quadro {
+        position: absolute; /* Posicionamento absoluto para o texto */
+        top: 78%; /* Ajuste conforme necessário para centralizar verticalmente */
+        left: 22vw; /* Ajuste conforme necessário para alinhar com o retângulo */
+        transform: translateY(-50%); /* Ajusta o posicionamento vertical */
+        z-index: 2; /* Garanta que o texto fique sobre o retângulo */
+    }
+
+    .hero-titulo {
+        font-size: 4.4vh;
+        margin-bottom: 1vh;
+        color: #893326;
+        font-weight: bold;
+    }
+
+    .hero-titulo2{
+        font-size: 6.3vh;
+        font-weight: bold;
+    }
+
+    .hero-subtitle{
+        font-size: 3.2vh;
+        margin-bottom: 1vh;
+        color: black;
+        margin-top: 5vh;
+        margin-right: 50vw;
+    }
+
+    .hero-subtitle2{
+        font-size: 3.2vh;
+        margin-bottom: 1vh;
+        color: #893326;
+        margin-top: 2vh;
+        margin-right: 50vw;
+        font-weight: bold;
+    }
+
+    .loja-content{
+       display: flex;
+       margin-top: 25vh;
+       flex-direction: column;
+       justify-content: center;
+       margin-left: 0vw;
+       align-items: center;
+    }
+
+
+
+    .section-title{
+        font-size: 4.4vh;
+        margin-bottom: 1vh;
+        color: black;
+        font-weight: bold;
+    }
+
+    .section-subtitle{
+        font-size: 3.2vh;
+        margin-bottom: 1vh;
+        color: #893326;
+        font-weight: bold;
+    }
