@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="../css/register.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+          <ul class="menu">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Histórias Para Contar</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Bazar</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <main class="login">
+        <div class="holder">
+            <!-- Texto -->
+            <div class="square1">
+                <div class="title">
+                    <h3>REGISTRAR-SE</h2>
+                </div>
+                <div class="divfform">
+                    <form action="/submit" method="POST" class="form-register">
+                        <div class="coluna1">
+                            <label for="nome">Nome:</label><br>
+                            <input type="text" name="nome" class="input" required><br>
+                            <br>
+                            <br>
+                            <label for="sobrenome">Sobrenome:</label><br>
+                            <input type="text" name="sobrenome" class="input" required><br>
+                            <br>
+                            <br>
+                            <label for="email">Email:</label><br>
+                            <input type="text" name="email" class="input" required><br>
+                        </div>
+
+                        <div class="coluna1">
+                            <label for="phone">Numero:</label><br>
+                            <input type="text" name="phone" class="input" required><br>
+                            <br>
+                            <br>
+                            <label for="gender">Genero:</label><br>
+                            <input type="text" name="gender" class="input" required><br>
+                            <br>
+                            <br>
+                            <label for="birth">Data de Nascimento:</label><br>
+                            <input type="date" name="birth" class="input" required><br>
+                        </div>
+
+                        <div class="coluna1">
+                            <br>
+                            <br>
+
+                            <label for="image-upload" class="custom-file-upload">
+                                Inserir Foto
+                            </label>
+                            <input id="image-upload" type="file"/>
+                            <br>
+                            <br>
+                            <label for="password1">Senha:</label><br>
+                            <input type="password" name="password1" class="input" required><br>
+                            <br>
+                            <br>
+                            <label for="pasword2">Confirme sua senha:</label><br>
+                            <input type="password" name="pasword2" class="input" required><br>
+                        </div>
+
+                        <div class="botoes">
+                            <input type="submit" value="Criar Conta" style="margin-right: 2.5%" class="botaoV">
+                            <a href="#" class="botao" style="margin-left: 2.5%;">Fazer Login</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+</body>
+</html>
