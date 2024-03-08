@@ -43,15 +43,15 @@
   </main>
   <main2>
     <div class="div-eventos">
-      <h1>EVENTOS</h1>
       <section class="lst-eventos">
+        <h1 class="titulo-eventos">EVENTOS</h1>
         <img class="bingo1" src="{{ url_for('static', filename='svg/event-bingo-1.svg') }}">
-        <img class="bingo2" src="{{ url_for('static', filename='svg/event-bingo-2.svg') }}">
+        <img class="bingo2" src="{{ url_for('static', filename='svg/event-bingo-1.svg') }}">
         <div class="eventos">
         </div>
       </section>
     </div>
-      
+    
   </main2>
   <main3>
     <section class="sobre-eventos">
@@ -66,6 +66,26 @@
       </div>
     </section>
   </main3>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Redes Sociais</h4>
+        <p>maessolidarias</p>
+        <p>maessolidarias</p>
+      </div>
+      <div class="footer-section">
+        <h4>Endereço</h4>
+        <p>rua blabladás, 1251</p>
+        <p>São Paulo, SP</p>
+      </div>
+      <div class="footer-section">
+        <h4>Contato</h4>
+        <p>55+119239503</p>
+        <p>maessolidarios@gmail.com</p>
+      </div>
+      <img src="{{ url_for('static', filename='svg/Chart 9.svg') }}" alt="linha decorativa" class="footer-line-image">
+    </div>
+  </footer>
 
 </body>
 

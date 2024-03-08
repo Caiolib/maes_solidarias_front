@@ -157,6 +157,7 @@ nav {
 }
 
 .sobre-eventos {
+  margin-top: 5vh;
   height: 100vh;
   position: relative;
   background-color: #FDF6DF;
@@ -242,31 +243,70 @@ nav {
 
 .div-eventos {
   margin-top: 5vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  margin-left: 15vw;
-  margin-right: 15vw;
-  top: 1vh;
   position: relative;
+  text-align: center; /* Isso centralizará o texto no container */
+}
+
+.titulo-eventos {
+  position: absolute;
+  width: 100%; /* Isso fará com que o texto se estenda por toda a largura do container */
+  top: 0%; /* Ajuste conforme necessário para posicionar verticalmente */
+  left: 50%;
+  bottom: 70%;
+  transform: translate(-50%, -50%); /* Isso centraliza o texto perfeitamente */
+  font-size: 6vh;
+  color: #000000;
+  z-index: 10; /* Garante que o texto fique acima das imagens */
 }
 
 .lst-eventos {
-  position: relative;
-  margin-top: 5vh;
+  margin-top: 14vh;
+  position: relative; /* Necessário para o posicionamento absoluto do título */
 }
 
-.div-eventos h1 {
-  margin-top: 1vh;
+
+
+.footer {
+  background-color: #822323;
+  color: white;
   text-align: center;
-  font-size: 6vh;
-  color: #8c1b26;
+  padding: 3vh 0;
 }
 
-.eventos {
+.footer-content {
   display: flex;
-  justify-content: space-between;
-  margin-top: 0vh;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+}
+
+.footer-section h4 {
+  margin-bottom: 5vh;
+  font-size: 3vh;
+}
+
+.footer-section p {
+  margin-bottom: 2vh;
+
+}
+
+.footer-bottom {
+  border-top: 0.2vh solid #ffffff;
+  padding-top: 1vh;
+  margin-top: 1vh;
+}
+
+.footer-content {
+  position: relative;
+}
+
+.footer-line-image {
+  width: 100%;
+  height: auto;
+  margin-top: 2vh;
 }
