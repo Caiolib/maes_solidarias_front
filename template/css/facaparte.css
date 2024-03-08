@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: 'Lekton', sans-serif;
+}
+
+nav {
+  z-index: 999;
+  width: 100%;
+  height: 10vh;
+  background-color: #b02a37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  /* fundo vermelho */
+  background: linear-gradient(180deg, rgba(99, 4, 4, 0.7) 0%, rgba(121, 34, 34, 0.7) 100%);
+  box-shadow: 0px 4px 34.6px 21px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 2rem;
+  gap: 3rem;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.menu li:hover a {
+  border-bottom-color: #ffffff;
+}
+
+.menu li a.special-link {
+  border: 1px solid #ffffff;
+  padding: 0.2rem 0.3rem;
+  transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+.menu li a.special-link:hover {
+  background-color: white;
+  color: #b02a37;
+  border-color: #ffffff;
+}
+
+.auth-links {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.auth-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.95rem;
+  margin-left: 1rem;
+}
+
+.hero {
+  padding-top: 20vh;
+  padding-left: 20vh;
+  height: 100vh;
+  /* Define a altura da seção hero como 100% da altura da viewport */
+  background: linear-gradient(180deg, rgba(99, 4, 4, 0.7) 0%, rgba(121, 34, 34, 0.7) 100%), url('../imagens/facaparte/coracao.png') center/cover no-repeat;
+  display: flex;
+  /* Permite que os cartões se alinhem verticalmente */
+  justify-content: flex-start;
+  /* Alinha os cartões horizontalmente à esquerda */
+  flex-direction: column;
+  /* Empilha os cartões um em cima do outro */
+}
+
+.card {
+  margin-right: 20px;
+  /* Adiciona margem à direita para separar os cartões */
+  width: 35%;
+  max-width: 200vw;
+  height: 30vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card h1 {
+  color: #8c1b26;
+}
+
+.doa {
+  color: #F8ABAB;
+  font-size: 1.7rem;
+}
+
+.card button {
+  padding: 10px 20px;
+  background-color: #8c1b26;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+
+.card button:hover {
+  background-color: #ffffff;
+  color: #8c1b26;
+}
+
+.como-ajudar {
+  background-color: #FFFFC7;
+  height: 200vh;
+  position: relative;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 3rem;
+  position: relative;
+  top: 5rem;
+}
+
+.pai {
+  display: flex;
+  flex-direction: column;
+  /* Organiza os elementos em coluna */
+  justify-content: center;
+  /* Centraliza os elementos verticalmente */
+  align-items: center;
+  /* Centraliza os elementos horizontalmente */
+}
+
+.voluntario-bazar {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  top: 10rem;
+  position: relative;
+}
+
+.div-voluntario {
+  text-align: center;
+  max-width: 40%;
+  justify-content: center;
+}
+
+.div-voluntario h1 {
+  font-size: 3rem;
+}
+
+.div-voluntario p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.numero {
+  font-size: 1.5rem;
+  color: #8c1b26;
+}
+
+.voluntario {
+  color: #8c1b26;
+}
+
+.btn-aplique {
+  padding: 10px 20px;
+  background-color: #8c1b26;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn-aplique:hover {
+  background-color: #ffffff;
+  color: #8c1b26;
+}
+
+.div-bazar {
+  text-align: center;
+}
+
+.div-bazar h1 {
+  font-size: 3rem;
+}
+
+.div-bazar p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.acoes {
+  color: #8c1b26;
+}
+
+.bazar {
+  color: #8c1b26;
+}
+
+.btn-bazar {
+  padding: 10px 20px;
+  background-color: #8c1b26;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn-bazar:hover {
+  background-color: #ffffff;
+  color: #8c1b26;
+}
+
+.patrocinador-doe {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  top: 10rem;
+  position: relative;
+}
+
+.patrocine {
+  text-align: center;
+  max-width: 40%;
+  justify-content: center;
+}
+
+.patrocine h1 {
+  font-size: 3rem;
+}
+
+.patrocine p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.patrocinador,
+.patrocin,
+.ajuda {
+  color: #8c1b26;
+}
+
+.btn-apoie {
+  padding: 10px 20px;
+  background-color: #8c1b26;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn-apoie:hover {
+  background-color: #ffffff;
+  color: #8c1b26;
+}
+
+.patrocine img {
+  margin-top: 2rem;
+  width: 30vw;
+}
+
+.imgdoe {
+  margin-left: 3rem;
+  vertical-align: middle;
+}
+
+.svg {
+  position: relative; /* Estabelece um contexto de posicionamento para os elementos filhos absolutamente posicionados */
+}
+
+.svg-content {
+  position: absolute; /* Posiciona o conteúdo dentro do .svg de forma absoluta */
+  top: 0; /* Coloca o conteúdo no topo do contêiner .svg */
+  left: 0; /* Coloca o conteúdo no canto esquerdo do contêiner .svg */
+}
+
+.svg h1 {
+  margin-left: 20.5vw;
+  margin-top: 3.5vh;
+  font-size: 8vh;
+}
+
+.p1 {
+  font-size: 9vh;
+  margin-left: 8vw;
+  margin-top: 6vw;
+}
+
+.p2 {
+  font-size: 9vh;
+  margin-left: 19vw;
+  margin-top: -7.3vw;
+}
+
+.p3 {
+  font-size: 9vh;
+  margin-left: 30.5vw;
+  margin-top: -7.3vw;
+}
+
+.p4 {
+  font-size: 5vh;
+  margin-left: 14vw;
+  margin-top: 3vw;
+}
