@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
-  <link rel="stylesheet" href="../css/eventos.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/eventos.css') }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap"
@@ -15,15 +15,15 @@
   <header>
     <nav>
       <ul class="menu">
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Histórias</a></li>
-        <li><a href="#">Eventos</a></li>
-        <li><a href="#">Bazar</a></li>
-        <li><a href="#" class="special-link">Faça Parte</a></li>
+        <li><a href="/">Menu</a></li>
+        <li><a href="historias">Histórias</a></li>
+        <li><a href="eventos">Eventos</a></li>
+        <li><a href="bazar">Bazar</a></li>
+        <li><a href="facaparte" class="special-link">Faça Parte</a></li>
       </ul>
       <div class="auth-links">
-        <a href="#">Login</a>
-        <a href="#" class="register-link">Registre-se</a>
+        <a href="/login">Login</a>
+        <a href="/register" class="register-link">Registre-se</a>
       </div>
     </nav>
   </header>
@@ -45,8 +45,8 @@
     <div class="div-eventos">
       <h1>EVENTOS</h1>
       <section class="lst-eventos">
-        <img class="bingo1" src="../imagens/eventos_page/event-bingo-1.svg">
-        <img class="bingo2" src="../imagens/eventos_page/event-bingo-2.svg">
+        <img class="bingo1" src="{{ url_for('static', filename='svg/event-bingo-1.svg') }}">
+        <img class="bingo2" src="{{ url_for('static', filename='svg/event-bingo-2.svg') }}">
         <div class="eventos">
         </div>
       </section>
@@ -60,7 +60,7 @@
         <p>Todo o lucro dos eventos é revertido para ações sociais da Associação Mães Solidárias em <span
             class="sobre-preto">causas reconhecidas</span><span class="sobre-vermelho">causas reconhecidas</span></p>
         <div class="lat-description">
-          <img src="../imagens/eventos_page/group9.png" alt="grupo9">
+          <img src="{{ url_for('static', filename='images/group9.png') }}" alt="grupo9">
           <h1><span class="sempre">SEMPRE</span><span class="buscando-fazer">BUSCANDO FAZER A</span><span class="diferenca">DIFERENÇA</span></h1>
         </div>
       </div>

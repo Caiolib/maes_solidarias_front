@@ -31,7 +31,7 @@ def login_submit():
 def register():
     return render_template('/register.html')
 
-@app.route('/evento')
+@app.route('/eventos')
 def eventos():
     return render_template('/eventos.html')
 
@@ -39,9 +39,9 @@ def eventos():
 def bazar():
     return render_template('/bazar.html')
 
-@app.route('/faca_parte')
+@app.route('/facaparte')
 def faca_parte():
-    return render_template('/faca_parte.html')
+    return render_template('/facaparte.html')
 
 @app.route('/historias')
 def historia_para_contar():

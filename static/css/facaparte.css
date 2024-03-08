@@ -80,7 +80,7 @@ nav {
   padding-left: 20vh;
   height: 100vh;
   /* Define a altura da seção hero como 100% da altura da viewport */
-  background: linear-gradient(180deg, rgba(99, 4, 4, 0.7) 0%, rgba(121, 34, 34, 0.7) 100%), url('../imagens/facaparte/coracao.png') center/cover no-repeat;
+  background: linear-gradient(180deg, rgba(99, 4, 4, 0.7) 0%, rgba(121, 34, 34, 0.7) 100%), url('../images/coracao.png') center/cover no-repeat;
   display: flex;
   /* Permite que os cartões se alinhem verticalmente */
   justify-content: flex-start;
