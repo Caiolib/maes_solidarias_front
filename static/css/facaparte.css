@@ -20,11 +20,9 @@ nav {
   align-items: center;
   padding: 1rem;
   position: fixed;
-  /* fundo vermelho */
   background: linear-gradient(180deg, rgba(99, 4, 4, 0.7) 0%, rgba(121, 34, 34, 0.7) 100%);
   box-shadow: 0px 4px 34.6px 21px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5px);
-  /* Note: backdrop-filter has minimal browser support */
 }
 
 .menu {
@@ -79,19 +77,14 @@ nav {
   padding-top: 20vh;
   padding-left: 20vh;
   height: 100vh;
-  /* Define a altura da seção hero como 100% da altura da viewport */
   background: linear-gradient(180deg, rgba(99, 4, 4, 0.7) 0%, rgba(121, 34, 34, 0.7) 100%), url('../images/coracao.png') center/cover no-repeat;
   display: flex;
-  /* Permite que os cartões se alinhem verticalmente */
   justify-content: flex-start;
-  /* Alinha os cartões horizontalmente à esquerda */
   flex-direction: column;
-  /* Empilha os cartões um em cima do outro */
 }
 
 .card {
   margin-right: 20px;
-  /* Adiciona margem à direita para separar os cartões */
   width: 35%;
   max-width: 200vw;
   height: 30vh;
@@ -147,11 +140,8 @@ nav {
 .pai {
   display: flex;
   flex-direction: column;
-  /* Organiza os elementos em coluna */
   justify-content: center;
-  /* Centraliza os elementos verticalmente */
   align-items: center;
-  /* Centraliza os elementos horizontalmente */
 }
 
 .voluntario-bazar {
@@ -300,13 +290,13 @@ nav {
 }
 
 .svg {
-  position: relative; /* Estabelece um contexto de posicionamento para os elementos filhos absolutamente posicionados */
+  position: relative; 
 }
 
 .svg-content {
-  position: absolute; /* Posiciona o conteúdo dentro do .svg de forma absoluta */
-  top: 0; /* Coloca o conteúdo no topo do contêiner .svg */
-  left: 0; /* Coloca o conteúdo no canto esquerdo do contêiner .svg */
+  position: absolute; 
+  top: 0; 
+  left: 0; 
 }
 
 .svg h1 {

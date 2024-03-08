@@ -20,11 +20,9 @@ nav {
   align-items: center;
   padding: 1rem;
   position: fixed;
-  /* fundo vermelho */
   background: linear-gradient(180deg, rgba(99, 4, 4, 0.7) 0%, rgba(121, 34, 34, 0.7) 100%);
   box-shadow: 0px 4px 34.6px 21px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5px);
-  /* Note: backdrop-filter has minimal browser support */
 }
 
 .menu {
@@ -79,20 +77,15 @@ nav {
   padding-top: 20vh;
   padding-left: 20vh;
   height: 100vh;
-  /* Define a altura da seção hero como 100% da altura da viewport */
   background: url('../images/beacht.jpg') center/cover no-repeat;
   display: flex;
-  /* Permite que os cartões se alinhem verticalmente */
   justify-content: flex-start;
-  /* Alinha os cartões horizontalmente à esquerda */
   flex-direction: column;
-  /* Empilha os cartões um em cima do outro */
 }
 
 
 .card {
   margin-right: 20px;
-  /* Adiciona margem à direita para separar os cartões */
   width: 35%;
   max-width: 300px;
   height: auto;
@@ -180,9 +173,7 @@ nav {
 .campaign-description {
   position: absolute;
   top: 15vh;
-  /* Posição 15% do topo */
   left: 50%;
-  /* Centralizando horizontalmente */
   transform: translateX(-50%);
   text-align: center;
 }
@@ -193,26 +184,21 @@ nav {
 
 .campaign-description p {
   font-size: 1.2rem;
-  /* Tamanho menor */
   text-align: center;
   margin-top: 1rem;
 }
 
 .campaign-description span {
   display: inline-block;
-  /* Para fazer com que os spans fiquem em uma linha */
 }
 
 .sobre-preto {
   color: black;
-  /* Cor do texto preto */
   margin-right: 0.5rem;
-  /* Adicionando uma margem direita para criar espaço */
 }
 
 .sobre-vermelho {
   color: #8c1b26;
-  /* Cor do texto vermelho */
   font-size: 1.25rem;
 }
 
