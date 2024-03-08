@@ -32,17 +32,17 @@
     <section class="hero">
       <div class="card">
         <h1>Amor não se guarda, se <span class="doa">doa</span></h1>
-        <button>COMO AJUDAR?</button>
+        <a class="como-ajudar-butao" href="#voluntario">COMO AJUDAR?</a>
       </div>
     </section>
   </main>
   <main2>
     <section class="como-ajudar">
-      <h1 class="titulo">FAÇA PARTE DESSA JORNADA</h1>
+      <h1 class="titulo" id="facajornada">FAÇA PARTE DESSA JORNADA</h1>
       <div class="pai">
         <div class="voluntario-bazar">
           <div class="div-voluntario">
-            <h1>SEJA UM <span class="voluntario">VOLUNTARIO</span></h1>
+            <h1 id="voluntario">SEJA UM <span class="voluntario">VOLUNTARIO</span></h1>
             <p>Hoje, contamos com mais de <span class="numero">400 </span>voluntarios para ajudar na nossa jornada</p>
             <button class="btn-aplique">APLIQUE</button>
           </div>
@@ -59,7 +59,7 @@
             <button class="btn-apoie">APOIE</button>
             <img src="{{ url_for('static', filename='images/patrocinios.png') }}" alt="patrocinios">
           </div>
-          <div class="doe">
+          <div class="doe" id="doacao">
             <section class="svg">
               <img class="imgdoe" src="{{ url_for('static', filename='svg/imgdoe.svg') }}">
               <div class="svg-content">

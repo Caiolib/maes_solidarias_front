@@ -369,3 +369,23 @@ a {
   height: auto; /* Isso garante que a altura da imagem se ajuste para manter as proporções */
   margin-top: 2vh; /* Adiciona espaço acima da imagem se necessário */
 }
+
+.como-ajudar-butao {
+  display: flex;
+  align-items: center;
+  margin-left: 25%;
+  margin-top: 10%;
+  justify-content: center;
+  background-color: #893326;
+  color: #FFFFC7;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 45%;
+  line-height: 1rem;
+  text-align: center;
+  height: 4rem;
+}
