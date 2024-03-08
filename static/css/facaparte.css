@@ -288,42 +288,6 @@ a {
   position: relative; 
 }
 
-.svg-content {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-}
-
-.svg h1 {
-  margin-left: 20.5vw;
-  margin-top: 3.5vh;
-  font-size: 8vh;
-}
-
-.p1 {
-  font-size: 9vh;
-  margin-left: 8vw;
-  margin-top: 6vw;
-}
-
-.p2 {
-  font-size: 9vh;
-  margin-left: 19vw;
-  margin-top: -7.3vw;
-}
-
-.p3 {
-  font-size: 9vh;
-  margin-left: 30.5vw;
-  margin-top: -7.3vw;
-}
-
-.p4 {
-  font-size: 5vh;
-  margin-left: 14vw;
-  margin-top: 3vw;
-}
-
 .footer {
   background-color: #822323;    
   color: white;
