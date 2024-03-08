@@ -1,77 +1,69 @@
+a {
+  text-decoration: none; /* Isso irá aplicar-se a todos os links no documento */
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body,
-html {
+body, html {
   height: 100%;
   font-family: 'Lekton', sans-serif;
 }
 
 nav {
-  z-index: 999;
   width: 100%;
-  height: 10vh;
+  height: 8vh;
   background-color: #b02a37;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  
   position: fixed;
   background: linear-gradient(180deg, rgba(99, 4, 4, 0.7) 0%, rgba(121, 34, 34, 0.7) 100%);
   box-shadow: 0px 4px 34.6px 21px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5px);
+  z-index: 1000;
 }
 
 .menu {
   list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  font-size: 2rem;
-  gap: 3rem;
-}
+  display: flex; /* Estabelece um contêiner flexível */
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; /* Ocupa a largura total da 'nav' */
+  font-size: 2.9vh;
+  gap : 1.7vw;
+  }
 
-.menu li a {
-  text-decoration: none;
-  color: #ffffff;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom-color 0.3s ease;
-}
+  .menu li a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+    
+    .special-link {
+      border: 1px solid #ffffff;
+      padding: 0.2vh 0.3vw;
+    }
+    
+  .auth-links {
+    position: absolute; 
+    right: 1vw; 
+    top: 1vh; 
+    display: flex; 
+    align-items: center; 
+  }
+  
+  
+  .auth-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.7vh; 
+    margin-left: 1vh; 
+  }
 
-.menu li:hover a {
-  border-bottom-color: #ffffff;
-}
-
-.menu li a.special-link {
-  border: 1px solid #ffffff;
-  padding: 0.2rem 0.3rem;
-  transition: background-color 0.5s ease, color 0.3s ease;
-}
-
-.menu li a.special-link:hover {
-  background-color: white;
-  color: #b02a37;
-  border-color: #ffffff;
-}
-
-.auth-links {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-  display: flex;
-  align-items: center;
-}
-
-.auth-links a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 0.95rem;
-  margin-left: 1rem;
-}
 
 .hero {
   padding-top: 20vh;
