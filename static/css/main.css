@@ -388,7 +388,7 @@ a {
 
 
 .event {
-  position: relative; /* Allows for absolute positioning of children */
+  position: relative; 
   margin: 1vh; /* Adjust this value as needed to control spacing */
   overflow: hidden; /* Ensures nothing spills out */
   border-radius: 8px;
@@ -410,7 +410,7 @@ a {
   justify-content: end; /* Aligns the text to the bottom */
   align-items: center; /* Centers the text horizontally */
   color: white;
-  padding: 1vw; /* Padding inside the overlay */
+ /* Padding inside the overlay */
 }
 
 button {
@@ -418,11 +418,12 @@ button {
   color: black;
   border: none;
   width: 12vw;
-  height: 4.5vh;
+  height: 3.5vh;
   font-size: 2vh;
   cursor: pointer;
   font-weight: bold; /* Subtract the total horizontal padding from 100% */
-  margin-top: 19vh;
+  margin-top: 20vh;
+  
 }
 
 .botao_ac{
@@ -432,9 +433,12 @@ button {
 .event h3 {
   color: black;
   text-align: left;
-  margin-right: 15vw;
-  margin-bottom: 3vh;
+  margin-right: 10vw;
+  margin-bottom: 4vh;
+  font-size: 3vh;
 }
+
+
 
 .event p{
   color: #656262;
