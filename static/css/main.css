@@ -272,7 +272,7 @@ a {
 
   
 .about-us-image-2 img{
-  width: 65%; /* Ajuste conforme necessário para o seu layout */
+  width: 100%; /* Ajuste conforme necessário para o seu layout */
   height: auto; /* Isso manterá a proporção da imagem correta */
   object-fit: cover;
   border-radius: 10px;
@@ -427,8 +427,31 @@ button {
 }
 
 .botao_ac{
+  margin-top: 20vh;
   margin-left: 6vw;
+  height: 3.3vh;
+  width: 49%;
+  background: url("../svg/botao.svg");
+  margin-bottom: 2vh;
+  text-decoration: none;
 }
+
+.botao_ac {
+  text-decoration: none; 
+  color: black; 
+  background-color: #f0f0f0; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  border: 1px solid #dcdcdc; 
+  display: inline-block; 
+}
+
+.botao_ac:hover {
+  background-color: #e0e0e0; 
+  text-decoration: none; 
+}
+
+
 
 .event h3 {
   color: black;

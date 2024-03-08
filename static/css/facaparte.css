@@ -131,9 +131,9 @@ a {
 
 .titulo {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3vh;
   position: relative;
-  top: 5rem;
+  top: 3vh;
 }
 
 .pai {
