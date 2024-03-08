@@ -80,7 +80,7 @@ nav {
   padding-left: 20vh;
   height: 100vh;
   /* Define a altura da seção hero como 100% da altura da viewport */
-  background: url('../imagens/eventos_page/beacht.jpg') center/cover no-repeat;
+  background: url('../images/beacht.jpg') center/cover no-repeat;
   display: flex;
   /* Permite que os cartões se alinhem verticalmente */
   justify-content: flex-start;

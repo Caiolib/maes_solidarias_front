@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
-  <link rel="stylesheet" href="../css/facaparte.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/facaparte.css') }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap"
@@ -16,15 +16,15 @@
   <header>
     <nav>
       <ul class="menu">
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Histórias</a></li>
-        <li><a href="#">Eventos</a></li>
-        <li><a href="#">Bazar</a></li>
+        <li><a href="/">Menu</a></li>
+        <li><a href="/historias">Histórias</a></li>
+        <li><a href="/eventos">Eventos</a></li>
+        <li><a href="/bazar">Bazar</a></li>
         <li><a href="#" class="special-link">Faça Parte</a></li>
       </ul>
       <div class="auth-links">
-        <a href="#">Login</a>
-        <a href="#" class="register-link">Registre-se</a>
+        <a href="/login">Login</a>
+        <a href="/register" class="register-link">Registre-se</a>
       </div>
     </nav>
   </header>
@@ -57,11 +57,11 @@
             <h1>SEJA UM <span class="patrocinador">PATROCINADOR</span></h1>
             <p>Contamos hoje com diversos <span class="patrocin">patrocinadores</span> que possibilitam a realização de varias ações, qualquer tipo de <span class="ajuda">ajuda</span> é bem vinda!</p>
             <button class="btn-apoie">APOIE</button>
-            <img src="../imagens/facaparte/patrocinios.png" alt="patrocinios">
+            <img src="{{ url_for('static', filename='images/patrocinios.png') }}" alt="patrocinios">
           </div>
           <div class="doe">
             <section class="svg">
-              <img class="imgdoe" src="../imagens/facaparte/imgdoe.svg">
+              <img class="imgdoe" src="{{ url_for('static', filename='svg/imgdoe.svg') }}">
               <div class="svg-content">
                 <h1>DOE</h1>
                 <p class="p1">R$5</p>
