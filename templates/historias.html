@@ -16,11 +16,11 @@
 <header>
   <nav>
     <ul class="menu">
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">Histórias Para Contar</a></li>
-      <li><a href="#">Eventos</a></li>
-      <li><a href="#">Bazar</a></li>
-      <li><a href="#" class="special-link">Faça Parte</a></li>
+      <li><a href="/">Menu</a></li>
+      <li><a href="/historias">Histórias Para Contar</a></li>
+      <li><a href="/evento">Eventos</a></li>
+      <li><a href="/bazar">Bazar</a></li>
+      <li><a href="/faca_parte" class="special-link">Faça Parte</a></li>
     </ul>
     <div class="auth-links">
       <a href="#">Login</a>
@@ -48,9 +48,9 @@
                 <p class="campaign-description_1">Proporcionamos nesse dia a renovação de <span class="destaque">mais de 50 </span>brinquedoteas<br> através de brinquedos doados<br>Inauguração do Painel da Paula Moura no Instituto André Franco Vive!</p>
                 <p class="campaign-description_2"></p>
             </div>
-            <img src="../imagens/Historias/Component 2.svg" alt="Foto de doacao" class="Foto">
+            <img src="{{ url_for('static', filename='svg/Component 2.svg') }}" alt="Foto de doacao" class="Foto">
         </section>
-        <img src="../imagens/Historias/criancas.svg" alt="criança" class="crianca">
+        <img src="{{ url_for('static', filename='svg/criancas.svg')}}" alt="criança" class="crianca">
     </section>
 
     <section class='campanha-coelho'>
