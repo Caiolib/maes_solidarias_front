@@ -210,7 +210,7 @@ a {
   color: #8c1b26;
 }
 
-.btn-bazar {
+.div-bazar a {
   padding: 10px 20px;
   background-color: #8c1b26;
   color: white;
@@ -218,10 +218,10 @@ a {
   border-radius: 5px;
   font-size: 2rem;
   cursor: pointer;
-  margin-top: 1rem;
+  margin-top: 3vh;
 }
 
-.btn-bazar:hover {
+.div-bazar a:hover {
   background-color: #ffffff;
   color: #8c1b26;
 }
