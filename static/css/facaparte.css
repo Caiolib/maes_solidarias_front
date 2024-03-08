@@ -71,14 +71,10 @@ a {
   padding-top: 20vh;
   padding-left: 20vh;
   height: 100vh;
-  /* Define a altura da seção hero como 100% da altura da viewport */
   background: linear-gradient(180deg, rgba(99, 4, 4, 0.7) 0%, rgba(121, 34, 34, 0.7) 100%), url('../images/coracao.png') center/cover no-repeat;
   display: flex;
-  /* Permite que os cartões se alinhem verticalmente */
   justify-content: flex-start;
-  /* Alinha os cartões horizontalmente à esquerda */
   flex-direction: column;
-  /* Empilha os cartões um em cima do outro */
 }
 
 .card {
@@ -139,11 +135,8 @@ a {
 .pai {
   display: flex;
   flex-direction: column;
-  /* Organiza os elementos em coluna */
   justify-content: center;
-  /* Centraliza os elementos verticalmente */
   align-items: center;
-  /* Centraliza os elementos horizontalmente */
 }
 
 .voluntario-bazar {
@@ -217,7 +210,7 @@ a {
   color: #8c1b26;
 }
 
-.btn-bazar {
+.div-bazar a {
   padding: 10px 20px;
   background-color: #8c1b26;
   color: white;
@@ -225,10 +218,10 @@ a {
   border-radius: 5px;
   font-size: 2rem;
   cursor: pointer;
-  margin-top: 1rem;
+  margin-top: 3vh;
 }
 
-.btn-bazar:hover {
+.div-bazar a:hover {
   background-color: #ffffff;
   color: #8c1b26;
 }
@@ -292,43 +285,7 @@ a {
 }
 
 .svg {
-  position: relative; /* Estabelece um contexto de posicionamento para os elementos filhos absolutamente posicionados */
-}
-
-.svg-content {
-  position: absolute; /* Posiciona o conteúdo dentro do .svg de forma absoluta */
-  top: 0; /* Coloca o conteúdo no topo do contêiner .svg */
-  left: 0; /* Coloca o conteúdo no canto esquerdo do contêiner .svg */
-}
-
-.svg h1 {
-  margin-left: 20.5vw;
-  margin-top: 3.5vh;
-  font-size: 8vh;
-}
-
-.p1 {
-  font-size: 9vh;
-  margin-left: 8vw;
-  margin-top: 6vw;
-}
-
-.p2 {
-  font-size: 9vh;
-  margin-left: 19vw;
-  margin-top: -7.3vw;
-}
-
-.p3 {
-  font-size: 9vh;
-  margin-left: 30.5vw;
-  margin-top: -7.3vw;
-}
-
-.p4 {
-  font-size: 5vh;
-  margin-left: 14vw;
-  margin-top: 3vw;
+  position: relative; 
 }
 
 .footer {
@@ -375,4 +332,24 @@ a {
   width: 100%; /* Isso fará com que a imagem ocupe a largura total do contêiner */
   height: auto; /* Isso garante que a altura da imagem se ajuste para manter as proporções */
   margin-top: 2vh; /* Adiciona espaço acima da imagem se necessário */
+}
+
+.como-ajudar-butao {
+  display: flex;
+  align-items: center;
+  margin-left: 25%;
+  margin-top: 10%;
+  justify-content: center;
+  background-color: #893326;
+  color: #FFFFC7;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 45%;
+  line-height: 1rem;
+  text-align: center;
+  height: 4rem;
 }

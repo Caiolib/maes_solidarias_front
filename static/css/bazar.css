@@ -69,10 +69,9 @@ a {
   .hero {
     height: calc(100vh);
     display: flex;
-    flex-direction: column; /* Isso garante que os itens sejam empilhados verticalmente */
-    justify-content: center; /* Isso centraliza os itens verticalmente */
-   /* Isso alinha os itens para o início do eixo horizontal */
-    text-align: left; /* Isso garante que o texto dentro do .hero seja alinhado à esquerda */
+    flex-direction: column;
+    justify-content: center; 
+    text-align: left;
     background: url('../svg/PlanoDeFundoBazar.svg') center/cover no-repeat;
     position: relative;
   }
@@ -91,11 +90,11 @@ a {
     }
 
     .texto-dentro-quadro {
-        position: absolute; /* Posicionamento absoluto para o texto */
-        top: 78%; /* Ajuste conforme necessário para centralizar verticalmente */
-        left: 22vw; /* Ajuste conforme necessário para alinhar com o retângulo */
-        transform: translateY(-50%); /* Ajusta o posicionamento vertical */
-        z-index: 2; /* Garanta que o texto fique sobre o retângulo */
+        position: absolute; 
+        top: 78%; 
+        left: 22vw; 
+        transform: translateY(-50%); 
+        z-index: 2; 
     }
 
     .hero-titulo {
@@ -165,27 +164,27 @@ a {
     }
     
     .produto .componente-container {
-      position: relative; /* Define o contêiner para posicionar os ícones */
+      position: relative; 
     }
     
     .produto .componente {
-      display: block; /* Imagens bloqueiam por padrão, mas apenas para segurança */
-      width: 100%; /* ou o tamanho desejado */
-      height: auto; /* Mantém a proporção da imagem */
+      display: block; 
+      width: 100%; 
+      height: auto; 
     }
     
     .produto .iconi-carrinho, 
     .produto .coracao {
       position: absolute;
-      bottom: 10px; /* Distância da borda inferior do contêiner .componente-container */
+      bottom: 10px; 
     }
     
     .produto .iconi-carrinho {
-      left: 10px; /* Distância da borda esquerda do contêiner .componente-container */
+      left: 10px; 
     }
     
     .produto .coracao {
-      right: 10px; /* Distância da borda direita do contêiner .componente-container */
+      right: 10px; 
     }
     
 
@@ -226,12 +225,11 @@ a {
 }
 
 .footer-content {
-  /* Restante das suas propriedades... */
-  position: relative; /* Para posicionar a imagem de linha em relação a este contêiner */
+  position: relative; 
 }
 
 .footer-line-image {
-  width: 100%; /* Isso fará com que a imagem ocupe a largura total do contêiner */
-  height: auto; /* Isso garante que a altura da imagem se ajuste para manter as proporções */
-  margin-top: 2vh; /* Adiciona espaço acima da imagem se necessário */
+  width: 100%; 
+  height: auto;
+  margin-top: 2vh; 
 }

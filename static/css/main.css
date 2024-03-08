@@ -1,160 +1,156 @@
 a {
-  text-decoration: none; /* Isso irá aplicar-se a todos os links no documento */
+  text-decoration: none;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body, html {
-    height: 100%;
-    font-family: 'Lekton', sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  nav {
-    width: 100%;
-    height: 8vh;
-    background-color: #b02a37;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    position: fixed;
-    /* fundo vermelho */
-    background: linear-gradient(180deg, rgba(99, 4, 4, 0.7) 0%, rgba(121, 34, 34, 0.7) 100%);
-    box-shadow: 0px 4px 34.6px 21px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(5px);
-    z-index: 1000;
-  }
+body,
+html {
+  height: 100%;
+  font-family: 'Lekton', sans-serif;
+}
 
-  .menu {
-    list-style: none;
-    display: flex; /* Estabelece um contêiner flexível */
-    justify-content: center; 
-    align-items: center; 
-    width: 100%; /* Ocupa a largura total da 'nav' */
-    font-size: 2.9vh;
-    gap : 1.7vw;
-    }
+nav {
+  width: 100%;
+  height: 8vh;
+  background-color: #b02a37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    .menu li a {
-        text-decoration: none;
-        color: #ffffff;
-      }
-      
-      .special-link {
-        border: 1px solid #ffffff;
-        padding: 0.2vh 0.3vw;
-      }
-      
-    .auth-links {
-      position: absolute; 
-      right: 1vw; 
-      top: 1vh; 
-      display: flex; 
-      align-items: center; 
-    }
-    
-    
-    .auth-links a {
-      text-decoration: none;
-      color: #ffffff;
-      font-size: 1.7vh; 
-      margin-left: 1vh; 
-    }
+  position: fixed;
+  background: linear-gradient(180deg, rgba(99, 4, 4, 0.7) 0%, rgba(121, 34, 34, 0.7) 100%);
+  box-shadow: 0px 4px 34.6px 21px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
 
-  
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 2.9vh;
+  gap: 1.7vw;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.special-link {
+  border: 1px solid #ffffff;
+  padding: 0.2vh 0.3vw;
+}
+
+.auth-links {
+  position: absolute;
+  right: 1vw;
+  top: 1vh;
+  display: flex;
+  align-items: center;
+}
+
+
+.auth-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.7vh;
+  margin-left: 1vh;
+}
+
+
 .hero {
   height: calc(100vh);
   display: flex;
-  flex-direction: column; /* Isso garante que os itens sejam empilhados verticalmente */
-  justify-content: center; /* Isso centraliza os itens verticalmente */
- /* Isso alinha os itens para o início do eixo horizontal */
-  text-align: left; /* Isso garante que o texto dentro do .hero seja alinhado à esquerda */
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
   background: url('../images/Plano_de_fundo.jpeg') center/cover no-repeat;
 
 }
 
 .hero-wrapper {
   display: flex;
-  justify-content: space-between; /* Isso espaça os filhos flexíveis uniformemente */
-  align-items: center; /* Isso centraliza os itens verticalmente */
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
 .hero-content {
-  /* Ajuste a largura conforme necessário */
-  flex-basis: 60%; /* ou 60% do espaço disponível */
+  flex-basis: 60%;
   padding-top: 6vh;
   padding-left: 5vw;
 }
 
 .Anuncios {
-  /* Restante das suas propriedades... */
-  display: flex;        /* Habilita flexbox */
-  flex-direction: column;/* Organiza os filhos em coluna */
-  align-items: center;   /* Centraliza os filhos horizontalmente */
-  text-align: center;    /* Alinha o texto ao centro */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   margin-right: 3vw;
-  
+
 }
 
 .Anuncios h2 {
-  /* Restante das suas propriedades... */
-  margin-bottom: 1vh; /* Ajuste o valor conforme necessário para o espaçamento entre o título e a imagem */
+  margin-bottom: 1vh;
 }
 
 
-  .hero h2{
-    color: #ffffff;
-    margin-bottom: 1rem;
-    font-size: 2.6rem;
-    font-style: normal;
-    font-weight: normal;
-    text-align: left;
-    padding-left: 0rem;
-  }
-  
-  .hero h1 {
-    color: #ffffff;
-    margin-bottom: 5rem;
-    font-size: 4.9rem;
-    font-style: normal;
-    font-weight: normal;
-    margin-top: -200px;
+.hero h2 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-size: 2.6rem;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  padding-left: 0rem;
+}
 
-  }
+.hero h1 {
+  color: #ffffff;
+  margin-bottom: 5rem;
+  font-size: 4.9rem;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: -200px;
 
-  .cta-button {
-    font-size: 1.5rem;
-    display: inline-block;
-    background: #822323;
-    color: rgb(255, 255, 255);
-    padding: 1.7rem 3.9rem;
-    transition: background-color 0.3s ease;
-    margin-left: 40px;
+}
 
-  }
-  
-  .cta-button:hover {
-    background-color: #94202f;
-  }
+.cta-button {
+  font-size: 1.5rem;
+  display: inline-block;
+  background: #822323;
+  color: rgb(255, 255, 255);
+  padding: 1.7rem 3.9rem;
+  transition: background-color 0.3s ease;
+  margin-left: 40px;
+
+}
+
+.cta-button:hover {
+  background-color: #94202f;
+}
 
 
 .active-causes {
   margin-top: 1vw;
   margin-left: 15vw;
   margin-right: 15vw;
-  background-color: #ffffff; /* Ou a cor de fundo desejada */
-  position: relative; /* Isso é necessário para que o retângulo de fundo seja posicionado corretamente */
+  background-color: #ffffff;
+  position: relative;
 }
 
 
 
 .active-causes .section-title {
-  color: #893326; /* Ou a cor de texto desejada */
+  color: #893326;
   font-size: 40px;
   margin-bottom: 0.5rem;
 }
@@ -166,13 +162,13 @@ a {
 }
 
 .campaign-title {
-  color: #68241a; /* Ou a cor de texto desejada */
+  color: #68241a;
   font-size: 50px;
   margin-bottom: 1rem;
 }
 
 .campaign-description {
-  color: #666; /* Ou a cor de texto desejada */
+  color: #666;
   font-size: 35px;
   margin-bottom: 1rem;
 }
@@ -183,41 +179,42 @@ a {
   gap: 2rem;
 }
 
-.campaign-stats .goal, .campaign-stats .collected {
+.campaign-stats .goal,
+.campaign-stats .collected {
   text-align: left;
 }
 
 .image-container {
-  width: 40%; /* Ajuste a largura conforme necessário */
+  width: 40%;
   position: relative;
-  /* Remova o estilo inline no HTML e coloque as propriedades de estilo aqui */
 }
 
 .image-container img {
-  width: 90%; /* Isso fará a imagem expandir para preencher o contêiner */
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25); /* Ajuste conforme necessário */
+  width: 90%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
 }
+
 .campaign-content {
-  width: 60%; /* Ajuste a largura conforme necessário */
-  padding-left: 20px; /* Ajuste o espaçamento conforme necessário */
+  width: 60%;
+  padding-left: 20px;
 }
 
 .goal {
-  position: relative; /* Estabelece a base para o posicionamento absoluto dos filhos */
+  position: relative;
 }
 
 .goal-rectangle {
-  /* Outras propriedades... */
-  position: relative; /* Mudado de absolute para relative */
-  width: 187px; /* Tamanho do retângulo */
-  height: 79px; /* Tamanho do retângulo */
+  position: relative;
+  width: 187px;
+  height: 79px;
   background: #FAD7D7;
-  display: inline-flex; /* Para centralizar o texto verticalmente */
-  align-items: center; /* Centraliza verticalmente o texto dentro do retângulo */
-  justify-content: center; /* Centraliza horizontalmente o texto dentro do retângulo */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.goal-text, .collected-text {
+.goal-text,
+.collected-text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,64 +222,70 @@ a {
   font-size: 20px;
 }
 
-.goal h4, .collected h5 {
+.goal h4,
+.collected h5 {
   margin: 0.5vw;
   font-size: 20px;
 }
 
 .progress-bar-container {
-  width: 95%; /* Largura do contêiner da barra de progresso */
-  background-color: #ddd; /* Cor de fundo da barra de progresso */
-  border-radius: 0px; /* Bordas arredondadas */
-  position: relative; /* Para posicionamento absoluto dos elementos filhos */
+  width: 95%;
+  background-color: #ddd;
+  border-radius: 0px;
+  position: relative;
 }
 
 .progress-bar {
-  height: 20px; /* Altura da barra de progresso */
-  background-color: #b02a37; /* Cor da barra de progresso */
-  border-radius: 5px; /* Mantenha as bordas arredondadas na barra também */
-  position: relative; /* Garantir que o texto não sobreponha */
+  height: 20px;
+  background-color: #b02a37;
+  border-radius: 5px;
+  position: relative;
 }
 
 .percentage-circle {
-  width: 90px; /* Tamanho do círculo */
-  height: 90px; /* Tamanho do círculo */
-  background-color: #b02a37; /* Cor de fundo do círculo */
-  border-radius: 50%; /* Faz com que o div se torne um círculo */
-  color: white; /* Cor do texto dentro do círculo */
-  display: flex; /* Permite centralizar o conteúdo com facilidade */
-  align-items: center; /* Centraliza o conteúdo no eixo y */
-  justify-content: center; /* Centraliza o conteúdo no eixo x */
-  position: absolute; /* Posiciona em relação ao contêiner da barra */
-  right: -17.5px; /* Metade do tamanho do círculo para alinhar ao centro da borda */
-  top: 50%; /* Posiciona na metade da altura da barra de progresso */
-  transform: translateY(-50%); /* Desloca para cima pela metade do tamanho do círculo para alinhamento vertical */
-  font-size: 40px; /* Tamanho da fonte do texto dentro do círculo */
-  z-index: 1; /* Garante que o círculo fique acima da barra de progresso */
+  width: 90px;
+  height: 90px;
+  background-color: #b02a37;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -17.5px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  z-index: 1;
 }
 
-
-/* Estilos para a seção de depoimentos */
-.container{
+.container {
   display: flex;
   margin-top: 10vw;
   margin-bottom: 5vw;
   margin-left: 10vw;
 }
 
+<<<<<<< HEAD
   
 .about-us-image-2 img{
   width: 100%; /* Ajuste conforme necessário para o seu layout */
   height: auto; /* Isso manterá a proporção da imagem correta */
+=======
+
+.about-us-image-2 img {
+  width: 65%;
+  height: auto;
+>>>>>>> 9f3c99837bf4947a0004d9a1cd840befdf288b27
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 2vw;
   margin-left: 4vw;
 }
 
-.about-us-text{
-  width: 35%; /* Ajuste conforme necessário para o seu layout */
-  padding:  2vw; /* Ajuste conforme necessário para o seu layout */
+.about-us-text {
+  width: 35%;
+  padding: 2vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -290,22 +293,22 @@ a {
   margin-left: 5vw;
 }
 
-.about-us-text h2{
+.about-us-text h2 {
   align-self: first baseline;
-  color: #893326; /* Ou a cor de texto desejada */
+  color: #893326;
   font-size: 5rem;
   margin-bottom: 1em;
 
 }
 
-.about-us-text p{
-  color: #000000; /* Ou a cor de texto desejada */
+.about-us-text p {
+  color: #000000;
   font-size: 2rem;
   margin-bottom: 1em;
 }
 
-.about-us-text a{
-  color: #ffffff; /* Ou a cor de texto desejada */
+.about-us-text a {
+  color: #ffffff;
   font-size: 2rem;
   margin-bottom: 1em;
   text-decoration: none;
@@ -318,99 +321,98 @@ a {
   background: #893326;
   opacity: 0.8;
   transform: skewX(20deg) skewY(10deg) rotate(30deg);
-  /* Você precisará ajustar o clip-path para criar a forma desejada do polígono */
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   z-index: -1;
 }
 
 
 .about-us-stats {
-  background-color: #fdbbbb; /* Cor de fundo rosa pálido da área de estatísticas */
-  display: flex; /* Usa Flexbox para alinhar os itens */
-  justify-content: space-around; /* Espaça os itens uniformemente */
-  align-items: center; /* Centraliza os itens verticalmente */
-  padding: 4rem; /* Espaçamento superior e inferior */
-  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  background-color: #fdbbbb;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem;
+  white-space: nowrap;
 }
 
 .stat-item {
-  text-align: center; /* Centraliza o texto dentro de cada item de estatística */
+  text-align: center;
 }
 
 .stat-number {
-  display: block; /* Faz o número aparecer em uma nova linha */
-  font-size: 4em; /* Aumenta o tamanho do número */
-  color: #ffffff; /* Cor do número */
+  display: block;
+  font-size: 4em;
+  color: #ffffff;
   font-style: bold;
 }
 
 .stat-description {
-  font-size: 2.5em; /* Tamanho da descrição */
-  color: #ffffff; /* Cor da descrição */
+  font-size: 2.5em;
+  color: #ffffff;
 }
 
-/* Exemplo de estilo para os ícones, caso você esteja usando fontes de ícone como FontAwesome */
+
 .stat-item i {
-  font-size: 2em; /* Tamanho do ícone */
-  margin-bottom: 10px; /* Espaço entre o ícone e o número */
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
-/* Exemplo de estilo para ícones SVG ou imagens, caso você os utilize */
+
 .stat-item img {
-  width: 50px; /* Largura do ícone */
-  height: auto; /* Altura automática para manter a proporção */
-  margin-bottom: 10px; /* Espaço entre o ícone e o número */
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .charity-section {
   display: flex;
-  flex-wrap: wrap; /* This allows for wrapping when the screen is too small */
+  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
   padding: 20px;
   position: relative;
 }
 
-.Titulo  {
-  width: 100%; /* Span the full width */
+.Titulo {
+  width: 100%;
   font-size: 2vh;
-  text-align: center; /* Center the text */
+  text-align: center;
   margin-top: 20vh;
   margin-bottom: 3vh;
-  color:rgba(99, 4, 4, 0.7) /* Spacing between the title and the events */
+  color: rgba(99, 4, 4, 0.7)
 }
 
 .Titulo p {
   margin-top: 3vh;
   font-size: 5vh;
-  color:#000000
+  color: #000000
 }
 
 
 .event {
-  position: relative; 
-  margin: 1vh; /* Adjust this value as needed to control spacing */
-  overflow: hidden; /* Ensures nothing spills out */
+  position: relative;
+  margin: 1vh;
+  overflow: hidden;
   border-radius: 8px;
 }
 
 .event img {
   width: 100%;
-  display: block; /* Removes any space below the image */
+  display: block;
 }
 
 .event-content {
   position: absolute;
-  top: 0; /* Positions the content at the top of the event */
-  left: 0; /* Aligns the content to the left edge */
-  right: 0; /* Aligns the content to the right edge */
-  bottom: 0; /* Aligns the content to the bottom edge */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
-  justify-content: end; /* Aligns the text to the bottom */
-  align-items: center; /* Centers the text horizontally */
+  justify-content: end;
+  align-items: center;
   color: white;
- /* Padding inside the overlay */
+  padding: 1vw;
 }
 
 button {
@@ -426,8 +428,12 @@ button {
   
 }
 
+<<<<<<< HEAD
 .botao_ac{
   margin-top: 20vh;
+=======
+.botao_ac {
+>>>>>>> 9f3c99837bf4947a0004d9a1cd840befdf288b27
   margin-left: 6vw;
   height: 3.3vh;
   width: 49%;
@@ -461,8 +467,6 @@ button {
   font-size: 3vh;
 }
 
-
-
 .event p{
   color: #656262;
   font-weight: bold;
@@ -470,10 +474,10 @@ button {
 }
 
 .footer {
-  background-color: #822323;    
+  background-color: #822323;
   color: white;
   text-align: center;
-  padding: 3vh 0; 
+  padding: 3vh 0;
 }
 
 .footer-content {
@@ -484,33 +488,32 @@ button {
 }
 
 .footer-section {
-  margin-top: 5vh; 
+  margin-top: 5vh;
   margin-bottom: 3vh;
 }
 
 .footer-section h4 {
-  margin-bottom: 5vh; 
+  margin-bottom: 5vh;
   font-size: 3vh;
 }
 
 .footer-section p {
-  margin-bottom: 2vh; 
+  margin-bottom: 2vh;
 
 }
 
 .footer-bottom {
-  border-top: 0.2vh solid #ffffff; 
-  padding-top: 1vh; 
-  margin-top: 1vh; 
+  border-top: 0.2vh solid #ffffff;
+  padding-top: 1vh;
+  margin-top: 1vh;
 }
 
 .footer-content {
-  /* Restante das suas propriedades... */
-  position: relative; /* Para posicionar a imagem de linha em relação a este contêiner */
+  position: relative;
 }
 
 .footer-line-image {
-  width: 100%; /* Isso fará com que a imagem ocupe a largura total do contêiner */
-  height: auto; /* Isso garante que a altura da imagem se ajuste para manter as proporções */
-  margin-top: 2vh; /* Adiciona espaço acima da imagem se necessário */
+  width: 100%;
+  height: auto;
+  margin-top: 2vh;
 }

@@ -1,5 +1,5 @@
 a {
-    text-decoration: none; /* Isso irá aplicar-se a todos os links no documento */
+    text-decoration: none;
   }
 
   * {
@@ -22,7 +22,6 @@ a {
     align-items: center;
     
     position: fixed;
-    /* fundo vermelho */
     background: linear-gradient(180deg, rgba(99, 4, 4, 0.7) 0%, rgba(121, 34, 34, 0.7) 100%);
     box-shadow: 0px 4px 34.6px 21px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(5px);
@@ -31,10 +30,10 @@ a {
 
   .menu {
     list-style: none;
-    display: flex; /* Estabelece um contêiner flexível */
+    display: flex; 
     justify-content: center; 
     align-items: center; 
-    width: 100%; /* Ocupa a largura total da 'nav' */
+    width: 100%; 
     font-size: 2.9vh;
     gap : 1.7vw;
     }
@@ -68,10 +67,10 @@ a {
     .hero {
         height: calc(100vh);
         display: flex;
-        flex-direction: column; /* Isso garante que os itens sejam empilhados verticalmente */
-        justify-content: center; /* Isso centraliza os itens verticalmente */
-        align-items: flex-start; /* Isso alinha os itens para o início do eixo horizontal */
-        text-align: left; /* Isso garante que o texto dentro do .hero seja alinhado à esquerda */
+        flex-direction: column;
+        justify-content: center; 
+        align-items: flex-start; 
+        text-align: left;
         background: url('../svg/FundoHistorias.svg') center/cover no-repeat;
         padding-left: 21vw;
       }
@@ -120,21 +119,19 @@ a {
             margin-left : 0vw;
             margin-right : 20vw;
             margin-bottom: 30vh;
-            
-            
         }
     
         .escorregador{
-            width: 60%; /* Faz a imagem preencher a largura do container */
+            width: 60%; 
             height: auto;
             margin-top: -19vh;
             transform: translateY(1vh);
         }
     
         .Foto {
-            order: 2; /* Isso garante que a imagem fique à direita em um layout flexível */
-            width: 40%; /* Ajuste a largura conforme necessário */
-            height: auto; /* Mantém a proporção da imagem */
+            order: 2; 
+            width: 40%; 
+            height: auto; 
         }
     
         .crianca{
@@ -156,22 +153,19 @@ a {
         }
     
         .campanha-coelho-text {
-          /* Restante das suas propriedades... */
           display: flex;
-          
-          align-items: flex-start; /* Alinha os filhos ao início do contêiner (à esquerda) */
+          align-items: flex-start;
           margin-left: 10vw;
           margin-right: 10vw;
       }
     
         .Foto_coelho{
-            width: 110%; /* Faz a imagem preencher a largura do container */
+            width: 110%;
             height: auto;
         }
 
-        .cta-button2 {
-          
-          align-self: center; /* Isso centralizará o botão na seção */
+        .cta-button2 {   
+          align-self: center; 
           font-family: "Just Me Again Down Here", cursive;
           font-size: 2.5rem;
           background: #822323;
@@ -215,8 +209,7 @@ a {
           }
           
           .footer-section p {
-            margin-bottom: 2vh; 
-          
+            margin-bottom: 2vh;         
           }
           
           .footer-bottom {
@@ -226,14 +219,13 @@ a {
           }
           
           .footer-content {
-            /* Restante das suas propriedades... */
-            position: relative; /* Para posicionar a imagem de linha em relação a este contêiner */
+            position: relative; 
           }
           
           .footer-line-image {
-            width: 100%; /* Isso fará com que a imagem ocupe a largura total do contêiner */
-            height: auto; /* Isso garante que a altura da imagem se ajuste para manter as proporções */
-            margin-top: 2vh; /* Adiciona espaço acima da imagem se necessário */
+            width: 100%; 
+            height: auto; 
+            margin-top: 2vh; 
           }
 
           
